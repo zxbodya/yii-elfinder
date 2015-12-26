@@ -30,11 +30,19 @@ ElFinder 1.x Yii extension
                   'connectorRoute' => 'admin/elfinder/connector',
                   )
           );
-3. ElFinderWidget use this widget to manage files
+3. ImageFileInput - similar to ServerFileInput. Displays small image preview instead of textual path to file.
+
+          $this->widget('ext.elFinder.ImageFileInput', array(
+                  'model' => $model,
+                  'attribute' => 'imageFile',
+                  'connectorRoute' => 'admin/elfinder/connector',
+                  )
+          );
+4. ElFinderWidget use this widget to manage files
 
           $this->widget('ext.elFinder.ElFinderWidget', array(
                   'connectorRoute' => 'admin/elfinder/connector',
                   )
           );
 
-4. To use TinyMceElFinder see: https://bitbucket.org/z_bodya/yii-tinymce
+5. To use TinyMceElFinder see: https://bitbucket.org/z_bodya/yii-tinymce
